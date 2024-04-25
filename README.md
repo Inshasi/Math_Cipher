@@ -21,12 +21,6 @@ Math Ciphers is a Python module that provides classes for encryption and decrypt
     cd Math_cipher
     ```
 
-3. Install the required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
 ## Usage
 1. Import the `Base_Cipher` class from the `math_ciphers` module:
 
@@ -79,8 +73,3 @@ Math Ciphers is a Python module that provides classes for encryption and decrypt
     cipher.set_key(custom_key)
     ```
 
-## Contributing
-Contributions are welcome! Please feel free to submit a pull request or open an issue for feature requests, bug fixes, or improvements.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
