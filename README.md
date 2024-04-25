@@ -12,3 +12,10 @@ To use the Math Ciphers module, follow these steps:
 
 ```python
 from math_ciphers import Base_Cipher
+
+# Create a cipher with the default key
+cipher = Base_Cipher()
+
+# Create a cipher with a custom key
+custom_key = (('A', 'Z', 5), 'CRYPT')
+cipher = Base_Cipher(custom_key)
