@@ -12,7 +12,7 @@ Math Ciphers is a Python module that provides classes for encryption and decrypt
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone <repository_url>
+    git clone Inshasi/MATH_Cipher.py
     ```
 
 2. Navigate to the project directory:
