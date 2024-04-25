@@ -1,21 +1,86 @@
 # Math Ciphers
 
 ## Overview
-The Math Ciphers project provides a Python implementation of a base cipher, which is a simple encryption and decryption algorithm based on mathematical operations. This cipher operates on a given alphabet and a keyword, allowing you to encode and decode messages.
+Math Ciphers is a Python module that provides classes for encryption and decryption using mathematical ciphers.
 
-## Getting Started
-To use the Math Ciphers module, follow these steps:
+## Features
+- Implements a base cipher class for creating mathematical ciphers.
+- Provides methods for encryption and decryption using the base cipher.
+- Supports customizable configuration, keyword, and block size for encryption.
 
-1. Clone the repository to your local machine.
-2. Ensure you have Python installed (version 3.6 or later).
-3. Import the `Base_Cipher` class from `math_ciphers.py` in your Python script or interactive environment.
+## Installation
+1. Clone this repository to your local machine:
 
-```python
-from math_ciphers import Base_Cipher
+    ```bash
+    git clone <repository_url>
+    ```
 
-# Create a cipher with the default key
-cipher = Base_Cipher()
+2. Navigate to the project directory:
 
-# Create a cipher with a custom key
-custom_key = (('A', 'Z', 5), 'CRYPT')
-cipher = Base_Cipher(custom_key)
+    ```bash
+    cd math_ciphers
+    ```
+
+3. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+1. Import the `Base_Cipher` class from the `math_ciphers` module:
+
+    ```python
+    from math_ciphers import Base_Cipher
+    ```
+
+2. Create an instance of `Base_Cipher` with an optional key:
+
+    ```python
+    cipher = Base_Cipher()
+    ```
+
+3. Encrypt plaintext using the `encrypt` method:
+
+    ```python
+    plaintext = "Hello, world!"
+    ciphertext = cipher.encrypt(plaintext)
+    print("Ciphertext:", ciphertext)
+    ```
+
+4. Decrypt ciphertext using the `decrypt` method:
+
+    ```python
+    decrypted_text = cipher.decrypt(ciphertext)
+    print("Decrypted text:", decrypted_text)
+    ```
+
+## Documentation
+- `Base_Cipher` class:
+    - `__init__(key)`: Constructor for the cipher class. Initializes the cipher with an optional key.
+    - `encrypt(plaintext)`: Encrypts the given plaintext.
+    - `decrypt(ciphertext)`: Decrypts the given ciphertext.
+    - Additional methods for setting and getting the cipher's key, configuration, and more.
+
+## Examples
+1. Encrypting and Decrypting Text:
+   
+    ```python
+    cipher = Base_Cipher()
+    plaintext = "Hello, world!"
+    ciphertext = cipher.encrypt(plaintext)
+    decrypted_text = cipher.decrypt(ciphertext)
+    ```
+
+2. Customizing Configuration and Keyword:
+
+    ```python
+    custom_key = (('A', 'Z', 3), 'KEYWORD')
+    cipher.set_key(custom_key)
+    ```
+
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue for feature requests, bug fixes, or improvements.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
