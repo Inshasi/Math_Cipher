@@ -12,13 +12,13 @@ Math Ciphers is a Python module that provides classes for encryption and decrypt
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone Inshasi/MATH_Cipher.py
+    git clone https://github.com/Inshasi/Math_Cipher.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd math_ciphers
+    cd Math_cipher
     ```
 
 3. Install the required dependencies:
